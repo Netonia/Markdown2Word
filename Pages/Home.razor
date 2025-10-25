@@ -19,6 +19,7 @@
                 class="markdown-input" 
                 @bind="markdownText" 
                 @bind:event="oninput"
+                @bind:after="UpdatePreview"
                 placeholder="Enter your Markdown text here...
 
 Example:
