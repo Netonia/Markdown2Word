@@ -1,0 +1,90 @@
+﻿@page "/"
+@using Markdown2Word.Services
+@using Microsoft.JSInterop
+@inject MarkdownToWordService MarkdownService
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Markdown to Word Converter</PageTitle>
+
+<div class="converter-container">
+    <div class="header">
+        <h1>Markdown to Word Converter</h1>
+        <p>Convert your Markdown text to a Word document instantly</p>
+    </div>
+    
+    <div class="editor-container">
+        <div class="editor-panel">
+            <h2>Markdown Input</h2>
+            <textarea 
+                class="markdown-input" 
+                @bind="markdownText" 
+                @bind:event="oninput"
+                placeholder="Enter your Markdown text here...
+
+Example:
+# Heading 1
+## Heading 2
+
+This is a **bold** text and this is *italic*.
+
+- List item 1
+- List item 2
+
+1. Numbered item 1
+2. Numbered item 2
+
+`inline code`
+
+```
+code block
+```"></textarea>
+        </div>
+        
+        <div class="preview-panel">
+            <h2>Preview</h2>
+            <div class="markdown-preview">
+                @((MarkupString)htmlPreview)
+            </div>
+        </div>
+    </div>
+    
+    <div class="action-container">
+        <button class="btn-convert" @onclick="ConvertToWord" disabled="@string.IsNullOrWhiteSpace(markdownText)">
+            <span class="btn-icon">📄</span>
+            Convert to Word
+        </button>
+    </div>
+</div>
+
+@code {
+    private string markdownText = string.Empty;
+    private string htmlPreview = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        UpdatePreview();
+    }
+
+    private void UpdatePreview()
+    {
+        htmlPreview = MarkdownService.RenderMarkdownToHtml(markdownText);
+    }
+
+    private async Task ConvertToWord()
+    {
+        if (string.IsNullOrWhiteSpace(markdownText))
+            return;
+
+        try
+        {
+            var docxBytes = MarkdownService.ConvertMarkdownToDocx(markdownText);
+            var fileName = $"markdown-{DateTime.Now:yyyyMMdd-HHmmss}.docx";
+            
+            await JSRuntime.InvokeVoidAsync("downloadFile", fileName, Convert.ToBase64String(docxBytes));
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error converting to Word: {ex.Message}");
+        }
+    }
+}
