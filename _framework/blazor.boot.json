@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "Markdown2Word",
   "resources": {
-    "hash": "sha256-RW8GiFUnBDIVGS1pam3U+iQeE3fMyikdca+5ZfkGfBM=",
+    "hash": "sha256-fUE+xRfywC/7J3msbzZ9gI++LezJGmuXSntaD7iTpEI=",
     "fingerprinting": {
       "DocumentFormat.OpenXml.hhbfa9ypgj.wasm": "DocumentFormat.OpenXml.wasm",
       "DocumentFormat.OpenXml.Framework.bfvm2vaze9.wasm": "DocumentFormat.OpenXml.Framework.wasm",
       "Markdig.7arl3t3lzj.wasm": "Markdig.wasm",
-      "Microsoft.AspNetCore.Components.i2kkgisk00.wasm": "Microsoft.AspNetCore.Components.wasm",
+      "Microsoft.AspNetCore.Components.vttbdbphmb.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.ca5xgge1r2.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.rwpg67y8a3.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
       "Microsoft.Extensions.Configuration.cyz6aj3end.wasm": "Microsoft.Extensions.Configuration.wasm",
@@ -45,7 +45,7 @@
       "System.Private.Xml.8u3a71nqxn.wasm": "System.Private.Xml.wasm",
       "System.Runtime.InteropServices.JavaScript.it9v611w20.wasm": "System.Runtime.InteropServices.JavaScript.wasm",
       "System.Runtime.InteropServices.6px0w8z6xi.wasm": "System.Runtime.InteropServices.wasm",
-      "System.Runtime.ji7vtmt4l7.wasm": "System.Runtime.wasm",
+      "System.Runtime.rcgu48mghu.wasm": "System.Runtime.wasm",
       "System.Text.Encodings.Web.hq94nfnuw2.wasm": "System.Text.Encodings.Web.wasm",
       "System.Text.Json.lcayjpm1fu.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.yv2qcwnrfo.wasm": "System.Text.RegularExpressions.wasm",
@@ -53,7 +53,7 @@
       "System.Xml.Linq.fnt4rzi185.wasm": "System.Xml.Linq.wasm",
       "System.8rv0tdtrxz.wasm": "System.wasm",
       "System.Private.CoreLib.xit747jb4d.wasm": "System.Private.CoreLib.wasm",
-      "Markdown2Word.pn3aevtg05.wasm": "Markdown2Word.wasm",
+      "Markdown2Word.3nmj4hyf45.wasm": "Markdown2Word.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.l4ptthxatg.js": "dotnet.native.js",
       "dotnet.native.d2w7colv7e.wasm": "dotnet.native.wasm",
@@ -84,7 +84,7 @@
       "DocumentFormat.OpenXml.hhbfa9ypgj.wasm": "sha256-5VULtKbY+lR96kKSP0b0aHVpdsGfnd10wyqDh4xgQi0=",
       "DocumentFormat.OpenXml.Framework.bfvm2vaze9.wasm": "sha256-aTmng4DeL3mncG1Rqmn03Lzn6Z9eyAzKLVX7LlZXr5A=",
       "Markdig.7arl3t3lzj.wasm": "sha256-oZvX+r82+FG4n3xRfVRT0SNO6/ibiCa3rxenF1EKrGk=",
-      "Microsoft.AspNetCore.Components.i2kkgisk00.wasm": "sha256-mvq6+s0z2tskS6mlL5TowQYWwy0UxPzsz8Y7QihUAK0=",
+      "Microsoft.AspNetCore.Components.vttbdbphmb.wasm": "sha256-w3THyMyC4mV8PPITs3tBdG8vTHQU42tVQl6za8dPCYs=",
       "Microsoft.AspNetCore.Components.Web.ca5xgge1r2.wasm": "sha256-/PbvE6qnnEDO3aL/UsN1rdRqu86udyP8e55jCA8jTgI=",
       "Microsoft.AspNetCore.Components.WebAssembly.rwpg67y8a3.wasm": "sha256-1bZXAq7xg/K+UZT3zZxmJHp4UKNJQBP+2ny+/lGkyHo=",
       "Microsoft.Extensions.Configuration.cyz6aj3end.wasm": "sha256-fN4AyqImDQ+h3H7tFeF4ZSkjIHJ7qWgbKL217x6P53s=",
@@ -122,14 +122,14 @@
       "System.Private.Xml.Linq.ueo1sl4h8t.wasm": "sha256-Kj5nrKp7Lqe+4a0PpqFk+ZHvoa3OERi/wG8F2CZIZM0=",
       "System.Private.Xml.8u3a71nqxn.wasm": "sha256-8CwPyWRRGk0fiODneBkrvF/78v9WLVF48YTKyzDINe0=",
       "System.Runtime.InteropServices.6px0w8z6xi.wasm": "sha256-ZmWIwLfDJBSY2oTfNoWXvCQ3pkLPPiGmnYJPBxDYz9M=",
-      "System.Runtime.ji7vtmt4l7.wasm": "sha256-NaPJv4ZVoYTCaKUgjFwYmw9E/1a57ppMvi3OQ506F7I=",
+      "System.Runtime.rcgu48mghu.wasm": "sha256-tU0WnHw7FomiC1Xq2+Z0WUY+VO7qy2NRC59OPyd1KLs=",
       "System.Text.Encodings.Web.hq94nfnuw2.wasm": "sha256-SQ1+aS+lCxp43qhvbxWS01rhQfbvNeDSN0xyk2P9/Hc=",
       "System.Text.Json.lcayjpm1fu.wasm": "sha256-5f/pmAaUD60NNpS1t3eXSfmZeBHw5hYzglCgrDhzKEw=",
       "System.Text.RegularExpressions.yv2qcwnrfo.wasm": "sha256-4jKrpF37tHWqmopkpDNJw6xlz/LDvaY7X56N4bE57+o=",
       "System.Threading.k290n83y9v.wasm": "sha256-7HRpxfGj5sI1zrphvqiLFIXmqbTPdY2VDAdJm1HCNIw=",
       "System.Xml.Linq.fnt4rzi185.wasm": "sha256-5claBNmyy8L12DFLS17Fh4SBiTjwhYts3ds7g8dX8Gc=",
       "System.8rv0tdtrxz.wasm": "sha256-xMF0eauQ5DkSzUozHLFFMQnL6DSJO09nJLtgag+Dzbw=",
-      "Markdown2Word.pn3aevtg05.wasm": "sha256-+1TLKnqFY1KpDNY2rfY0mvcJabxghMWWEOvRxp+8tUA="
+      "Markdown2Word.3nmj4hyf45.wasm": "sha256-ob6o0q0Tg8aYxJesJumoeaWfO1B5xHslDvBw8bWMLWw="
     }
   },
   "cacheBootResources": true,
